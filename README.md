@@ -1,6 +1,6 @@
 # COVID-19 Tracker
 
-### [Live Site](https://covid19statswebsite.netlify.com/)
+### [Live Site](https://covid-19-tracker-website.netlify.app)
 
 React hooks, Charts.JS and Material UI.
 
