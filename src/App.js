@@ -27,6 +27,7 @@ class App extends React.Component {
 
     return (
       <>
+      <div className={styles.container}>
       {/*navbar*/}
       <nav class="navbar navbar-dark default-color"><a class="navbar-brand" href="#">Corona Virus Tracker</a>
       <ul class="navbar-nav ml-auto nav-flex-icons">
@@ -38,37 +39,18 @@ class App extends React.Component {
       </li>
       </ul>
       </nav>
-      {/*navbar*/}
-        <header id="header">
-        <div className="logo">
-        <a class="navbar-brand" href="#">Corona Virus Tracker</a>
-        </div>
-        <nav id="nav-bar">
-          <ul>
-          <li><a className="nav-link" to="/"></a></li>
-          <a class="nav-link waves-effect waves-light"><i class="fab fa-facebook"></i></a>
-          <a class="nav-link waves-effect waves-light"><i class="fab fa-twitter"></i></a>
-          </ul>
-        </nav>
-      </header>
-
       {/**/}
-      <div className={styles.container}>
         <img className={styles.image} src={image} alt="COVID-19" />
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Chart data={data} country={country} />
-        </div>
-        
-      {/*footer*/}
-        {/*<footer class="page-footer font-small teal">
+        {/*footer*/}
+        <footer class="page-footer font-small teal">
           <div class="footer-copyright text-center py-3">© 2020 Copyright:
           <a href=""> Corona Virus Tracker</a>
           </div>
-          </footer>*/}
-          <footer className="footer">
-          <p>© 2020 Copyright: &copy; Corona Virus Tracker</p>
           </footer>
+        </div>
         </>
     );
   }
